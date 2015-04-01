@@ -1,0 +1,231 @@
+/*这个是对应index_new.html的CSS文件*/
+
+#content-wrap{
+    max-width: 1070px;
+}
+.content-head{
+    font-size: 0;
+	width:1035px;
+}
+.book-category {
+    width: 255px;
+    background-color: #4A5E80;
+    display: inline-block;
+}
+.book-category .category-search{
+    padding: 8px 13px;
+    position: relative;
+    border-bottom: 1px dashed #fff;
+}
+.book-category .category-search input[type="text"]{
+    width: 228px;
+    color: #383838;
+    padding: 4px;
+    font-size: 12px;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.2);
+    border-radius: 3px;
+
+}
+.book-category .category-search input[type="submit"]{
+    width: 14px;
+    height: 14px;
+    background:url("../../img/category-search-icon.jpg") no-repeat 95% 50%; 
+    border:0;
+    text-indent: -2000em;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+
+}
+.book-category li{
+    margin: 0 13px;
+    height: 37px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.book-category li:last-of-type{
+    border-bottom: 0;
+}
+.book-category li h3{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 5px;
+}
+.book-category li p{
+    font-size: 12px;
+    padding: 0px 5px 9px; 
+    line-height: 150%;
+
+}
+.book-category li p a{
+    margin-right: 10px;
+}
+
+
+.book-category li.active{
+    height: auto;
+}
+/*.book-category li:hover{
+    height: auto;
+}*/
+
+
+.banner{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.banner-main li{
+    position: absolute;
+    left: 0;top: 0;
+}
+.banner-main li:first-child{
+    z-index: 5;
+    position: relative;
+}
+.banner-main li:nth-of-type(2){
+    z-index: 4;
+}
+.banner-main li:nth-of-type(3){
+    z-index: 3;
+}
+.banner-main li:last-child{
+    z-index: 2;
+}
+
+.banner-nav{
+    background-color: #dcdcdc;
+    width: 780px;height: 104px;
+    padding: 12px 0 12px 12px;
+}
+.banner-nav img{
+    width: 181px;
+    height: 81px;
+    float: left;
+    margin-right: 11px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+.content-main{
+    width: 1040px;
+    margin-top: 25px;
+}
+
+.tab-content{
+    position: relative;
+}
+.hot-new-recomment{
+    height: 273px;
+}
+.tab-nav,.tab-content{
+    float: left;
+}
+.tab-nav {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    perspective: 1200px;
+}
+.tab-nav li:first-child{
+    -webkit-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+.tab-nav li{
+    width: 34px;
+    height: 87px;padding:13px 10.5px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.tab-nav li.active{
+    box-shadow: 0 0 3px rgba(0,0,0,.6);
+    -webkit-transform:scale(1.1) rotateY(30deg);
+    -ms-transform:scale(1.1) rotateY(30deg);
+    -o-transform:scale(1.1) rotateY(30deg);
+    transform:scale(1.1) rotateY(30deg);
+}
+.tab-nav li a {
+    font-size: 14px;
+
+}
+
+.hot-item{
+    background-color: #f94348;
+}
+.new-item{
+    background-color: #3cb38d;
+}
+.recomment-item{
+    background-color:#4bb3e8;
+}
+
+
+.tab-panel{
+    border:2px solid #f94348;
+    background-color: #fff;
+    position: absolute;
+    top: 0;left: 0;
+    width: 1001px;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.tab-panel.active{
+    opacity: 1;
+    display: block;
+}
+.tab-panel>div{
+    float: left;
+    width: 160px;
+
+}
+.tab-panel>div:not(.main-img){
+    margin-top: 38px;
+    text-align: center;
+}
+.tab-panel>div:not(.main-img) p{
+    margin: 5px 0;
+}
+.tab-panel .main-img{
+    width: 357px;
+    overflow: hidden;
+}
+
+.hot.tab-panel{
+    border-color: #f94348;
+    z-index: 5;
+}
+.new.tab-panel{
+    border-color: #3cb38d;
+    z-index: 4;
+}
+.recomment.tab-panel{
+    border-color: #4bb3e8;
+    z-index: 3;
+}

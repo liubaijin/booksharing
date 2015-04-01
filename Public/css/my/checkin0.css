@@ -1,0 +1,156 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#page {
+	position:relative;
+	margin:50px auto;
+	width:1000px;
+	background-color:green;
+}
+
+#page>div {
+	position:absolute;
+}
+
+#left {
+	top:120px;
+	left:50px;
+
+}
+#left>img {
+	margin-top: 5px;
+	width:300px;
+	height:200px;
+}
+#about_animation {
+	float:left;
+	width: 250px;
+}
+#about_panel {
+	display: inline-block;
+	margin-top: 5px;
+	width:300px;
+	height:30px;
+	//background-color:#bbb;
+}
+#about_btn { 
+	float:right;
+}
+#about_btn:hover { 
+	color: red;
+}
+
+#about_window_panel { 
+	position: fixed;
+	padding:10px;
+	left:0px;
+	top:0px;
+	width: 380px;
+	height: 280px;
+	border-radius:10px;
+	background-color:#eee;
+	display: none;
+}
+
+#about_back {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+}
+#about_back:hover { 
+	color: red;
+}
+
+
+
+
+
+
+
+
+#right_register, #right_sign_in {
+	top:120px;
+	right:50px;
+	width:380px;
+	padding:30px;
+	padding-top:10px;
+	border-radius:10px;
+	border:1px solid #777;
+	background-color:#eee;
+	//-webkit-transition:width 2s;
+	display:none;
+
+	//-webkit-transform: rotateY(150deg);
+	//-webkit-transform: rotateX(30deg) rotateY(89deg);
+}
+ #right_sign_in {
+ 	right:80px;
+}
+@-webkit-keyframes display_to_none /*Safari and Chrome*/
+{
+0% {-webkit-transform: rotateX(0deg) rotateY(0deg) scale(1, 1);}
+100% {-webkit-transform: rotateX(20deg) rotateY(90deg) scale(0.8, 0.8);}
+}
+@-webkit-keyframes none_to_display /*Safari and Chrome*/
+{
+0% {-webkit-transform: rotateX(20deg) rotateY(270deg) scale(0.8, 0.8);}
+100% {-webkit-transform: rotateX(0deg) rotateY(360deg) scale(1, 1);}
+}
+
+#login_label {
+	display:inline-block;
+	padding:2px;
+	box-shadow:3px 4px 5px #888;
+	background-color:#eaeaea;
+}
+
+#right_register>div, #right_sign_in>div {
+	position:static;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.register_input_prompt { 
+	display:inline-block;
+	width:126px;
+	height:40px;
+	
+	float:right;
+
+}
+.login_input_prompt {
+	display:inline-block;
+	width:78px;
+	height:40px;
+	
+	float:right;
+}
+img {
+	float:left;
+	top:9px;
+	height:39px;
+}
+input {
+	height:35px;
+	width:200px;
+	font-size:20px;
+}
+#submit:hover {
+	background-color:#f55;
+}
+
+#right_sign_in {
+	width:330px;
+}
+
+.btn_submit {
+	border:0px;
+	width:117px;
+	height:25px;
+	//float:right;
+	font-size:20px;
+	margin-top:20px;
+	border-radius:5px;
+	background-color:#fbb;
+}
